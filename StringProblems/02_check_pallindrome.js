@@ -1,5 +1,6 @@
 //using built in function to reverse string then check 
 function isPalindrome(str) {
+    str=str.toLowerCase();
   const reversed = str.split('').reverse().join('');
   return str === reversed;
 }
@@ -26,7 +27,7 @@ function isPalindromeRec(str){
     return isPalindromeRec(str.slice(1,str.length-1));
 }
 
-console.log(isPalindrome("mam"));   // true
+console.log(isPalindrome("Mam"));   // true
 console.log(isPalindrome("helloll"));   // false
 console.log("-=-=-=-=-=--=-=-=Using Pointers-=-=-=-=-=-=")
 console.log(isPalindrome2("madam"));   // true
