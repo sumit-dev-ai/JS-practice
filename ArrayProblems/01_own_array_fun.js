@@ -1,4 +1,5 @@
 //own map()
+console.log("-------------------MyMAp()------------------------");
 Array.prototype.myMap=function(callback){
     const res=[];
     for(let i=0; i<this.length;i++){
@@ -12,7 +13,14 @@ Array.prototype.myMap=function(callback){
     }
     return res;
 };
+const numbers = [1, 2, 3, 4];
+
+const doubled = numbers.myMap((num) => num * 2);
+console.log(doubled); //  [2, 4, 6, 8]
+
+
 //filter()
+console.log("-------------------MyFilter()------------------------");
 Array.prototype.MyFilter=function(callback){
     const res=[];
     for (let i = 0; i < this.length; i++) {
@@ -23,6 +31,12 @@ Array.prototype.MyFilter=function(callback){
     }
     return res;
 }
+const Even = numbers.MyFilter((num) => num %2=== 0);
+console.log(`Filter function to find even : ${Even}`);
+
+
+
+console.log("-------------------myReduce()()------------------------");
 //reduce()
 Array.prototype.MyReduce=function(callback,initialVal){
     let accumlator=initialVal;
@@ -40,12 +54,6 @@ Array.prototype.MyReduce=function(callback,initialVal){
 
 
 
-const numbers = [1, 2, 3, 4];
-console.log("MyMAp()");
-const doubled = numbers.myMap((num) => num * 2);
-console.log(doubled); //  [2, 4, 6, 8]
-const Even = numbers.MyFilter((num) => num %2=== 0);
-console.log(`Filter function to find even : ${Even}`);
 
 const sum = numbers.MyReduce((acc, curr) => acc + curr, 0);
 console.log(`Reduce function to find even : ${sum}`);
