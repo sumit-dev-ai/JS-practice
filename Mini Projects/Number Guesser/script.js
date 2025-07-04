@@ -1,3 +1,6 @@
+// This is a game where a random number will be selected by computer in range of 1 to 100 you have to guess it within 10 attempts computer will guide you by telling 
+// that your number is too low or too high example if number is 45 and you choose 34 it will tell you that the number you guessed is lower than the original number guess again
+
 // Need a function for genrating Random number
 //To check number also keep attemp count and increase it at each call
 // after winning or losing calling another function which asks if you want to play playAgain
