@@ -15,7 +15,6 @@ const twoSumSorted = (nums, target) => {
     else if ((nums[left]+nums[right]) > target) {
         right--;
     }
-
   }
 };
 
